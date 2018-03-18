@@ -1,0 +1,126 @@
+/* 
+_SASS
+_GENERAL
+_HEADER
+ */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+*:focus {
+  outline: none; }
+
+body {
+  margin: 0; }
+
+.container {
+  margin: 0 16%; }
+
+header {
+  height: 100vh;
+  background: #000 url("../../images/header_background.jpg") center/cover;
+  min-height: 550px;
+  color: #FFF;
+  font-family: "Lato", sans-serif; }
+  header nav {
+    position: relative;
+    height: 5rem;
+    line-height: 5rem;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold; }
+    header nav .logo {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%); }
+    header nav .nav-list {
+      float: right;
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+      header nav .nav-list .nav-item {
+        display: inline-block; }
+        header nav .nav-list .nav-item a {
+          color: #FFF;
+          text-decoration: none;
+          padding-left: 1em; }
+      header nav .nav-list .nav-active a {
+        color: #ED145B; }
+  header .header-slogan {
+    font-weight: 300; }
+    header .header-slogan span {
+      text-transform: uppercase;
+      font-weight: 900; }
+
+/* 
+.header-slogan {
+	position: absolute;
+	width: 800px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -150%);
+	font: 3.2rem/1.092 "Open Sans", sans-serif;
+	color: #FFF;
+	text-align: center;
+
+}
+
+.header-text{
+	font: 22px/1.5 'Raleway', sans-serif;
+	color: #FFF;
+	position: absolute;
+	width: 950px;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -120%);
+	text-align: center;
+}
+
+.button {
+	position: relative;
+	border-radius: 2px;
+	background-color: rgb(232, 69, 69);
+	width: 200px;
+	height: 46px;
+	font: bold 13px/1.615 'Raleway', sans-serif;
+	color: #FFF;
+	text-transform: uppercase;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.5s, box-shadow 0.4s, text-shadow 0.4s;
+}
+
+.button span {
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+.button:hover {
+	box-shadow: 0 0 10px 2px rgba(235, 35, 35, 0.7);
+	text-shadow: 0 0 2px #FFF;
+    background-color: rgb(235, 35, 35);
+}
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.header-button {
+	position: absolute;
+	top: 83%;
+	left: 50%;
+	transform: translate(-50%, -150%);
+} */
+
+/*# sourceMappingURL=main.css.map */
