@@ -6,7 +6,7 @@ _GENERAL
 _HEADER
  */
 
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900');
 
 // SASS VARIABLES
 
@@ -14,11 +14,15 @@ $main-color: #ED145B;
 $text-color: #FFF;
 $font-main: 'Lato', sans-serif;
 $nav-height: 5rem;
-
+$nav-hamburger-size: 2.5rem;
+$container-margin: 16%;
+$tablets: "(min-width: 768px) and (max-width: 1199px)";
+$phones: "(max-width: 767px)";
 // _GENERAL
 
 * {
 	// outline: 1px solid red;
+	box-sizing: border-box;
 }
 
 *:focus {
@@ -30,70 +34,245 @@ body {
 }
 
 .container {
-	margin: 0 16%; //check in PSD 21.6%
+	margin: 0 $container-margin; //check in PSD 21.6%
 }
 
-// _HEADER
+.line {
+	display: inline-block;
+	width: 150px;
+	border-bottom: 2px solid $main-color;
+	margin: 1.2em;
+}
 
+// _HEADER_GENERAL
 header {
 	height: 100vh; 
 	background: #000 url('../../images/header_background.jpg') center/cover;
-	min-height: 550px; // rem?
 	color: $text-color;
-	font-family: $font-main;
-	nav {
-		position: relative;		
-		height: $nav-height;
-		line-height: $nav-height;
-		color: $text-color;
-		font-size: 16px;
-		font-weight: bold;
-		.logo {
-			position: absolute;
-			top:50%;
-			transform: translate(0, -50%);
-		}
-		.nav-list {
-			float: right;
-			padding: 0;
+	font-family: $font-main; 
+	position: relative;
+	min-height: 600px;
+// _HEADER_CONTENT
+	.header-content {
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%, -50%);
+		width: calc(100% - 2 * #{$container-margin});
+		text-align: center;
+		.header-slogan {
+			font-weight: 300;
 			margin: 0;
-			list-style: none;
+			text-transform: uppercase;
+			span {
+				font-weight: 900;
+			}
+		}
+		.header-line {} // PUSTAK
+		.header-text {
+			font-weight: 300;
+			margin: 0;
+			padding-bottom: 0.5em;
+		}
+		.button {
+			background-color: $main-color;
+			font-family: inherit;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: #FFF;
+			border: none;
+			width: 150px;
+			height: 35px;
+			border-radius: 40px;
+			margin: 3.3em auto;
+		}
+	}
+}
+
+.no-content {
+	display: none;
+}
+
+// _NAVIGATION
+nav {
+	height: $nav-height;
+	line-height: $nav-height;
+	color: $text-color;
+	font-size: 16px;
+	font-weight: bold;
+	.logo-container {
+		display: inline-block;
+		.logo {
+			transform: translate(0, 20%)
+		}
+	}
+	.nav-list {
+		float: right;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		.nav-item {
+			display: inline-block;
+			a {
+				color: $text-color;
+				text-decoration: none;
+				margin-left: 1em;
+			}
+		}
+		.nav-active {
+			a {color: $main-color};
+		}	
+	}
+	label[for="menu-button"] {
+		display:none;
+	}
+}
+
+@media #{$tablets} {
+	nav {
+		text-align: center;
+		display: block;
+		.nav-list {
+			font-size: 1.3rem;
+			width: 100%;
+			display: flex; 
+			justify-content: space-between;
 			.nav-item {
-				display: inline-block;
 				a {
-					color: $text-color;
-					text-decoration: none;
-					padding-left: 1em;
+					margin: 0;
 				}
 			}
-			.nav-active {
-				a {color: $main-color;}
-			}	
 		}
-		
 	}
-	.header-slogan {
-		font-weight: 300;
-		span {
+}
+@media #{$phones} {
+	nav {
+		.logo-container {
+			display: block;
+		}
+		.nav-list {
+			.nav-item {
+				display: block;
+			&:nth-child(1) {padding-left: $nav-hamburger-size;}
+			}
+		}
+		label[for="menu-button"] {
+			display:inline;
+			float: right;
+			font-size: $nav-hamburger-size;
+			text-shadow: 0 0 3px $text-color;
+			cursor: pointer;
+			position: relative;
+			bottom: $nav-height;
+		}
+
+	}
+	#menu-button:not(:checked) ~ul {
+			display: none;
+		}
+	#menu-button:checked ~ ul {
+		position: absolute;
+		top:50%;
+		left: 50%;
+		width: 70%;
+		transform: translate(-50%, -50%);
+		float: none;
+		display: block;
+		text-align: center;
+		background-color: #000000AA;
+		box-shadow: 0 0 5px 2px #000000AA;
+		border-radius: 20px;
+		.nav-item {padding-left: 0;}
+	}
+}
+
+// _ABOUT SECTION
+
+.about-section {
+	position: relative;
+	font-family: $font-main;
+	font-weight: 300;
+	background-color: #f4f4f4;
+	// height: 80vh;
+	min-height: 430px;
+	.clippy {
+		background-color: $main-color;
+		clip-path: polygon(0 0, 0 100%, 100% 0);
+		height:2rem;
+	}
+	.about-content {
+		width:35%;
+		h2{ width: 50%;
+			font-weight: 300;
+			font-style: italic;
+
+			margin-top: 3rem;}
+		.about-line{margin: 0.6rem}
+		p {}
+		.see-video {
 			text-transform: uppercase;
-			font-weight: 900;
+			color: $main-color;
+			font-weight: 700;
+			padding-bottom: 50px;
+			a {
+				display: inline-block;
+				border: 1px solid $main-color;
+				border-radius: 50%;
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				.fa-play {
+					transform: translate(0%, -10%);
+					color: $main-color;
+					font-size: 0.8rem;
+					padding: 5px;
+				} 
+				&:hover {
+					background-color: $main-color;
+					.fa-play {color: $text-color;}
+				}
+			}
 		}
+	}
+	img {
+		width: 50%;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		transform: translate(0%, 15%);
+	}
+}
+
+@media #{$tablets} {
+	.about-section {
+		.about-content {
+			h2 {width: 100%}
+		}
+		img {
+		transform: translate(5%, -10%);}
+	}
+}
+
+@media #{$phones} {
+	.about-section {
+		min-height: 600px;
+		width: 100%;
+		text-align: center;
+		.about-content {
+			margin: 0 auto;
+			width:80%;
+			h2 {width: 100%}
+		}
+		img {width: 80%;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, 25%);}
 	}
 }
 
 
-/* 
-.header-slogan {
-	position: absolute;
-	width: 800px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -150%);
-	font: 3.2rem/1.092 "Open Sans", sans-serif;
-	color: #FFF;
-	text-align: center;
-
-}
+/*
 
 .header-text{
 	font: 22px/1.5 'Raleway', sans-serif;
