@@ -44,6 +44,19 @@ body {
 	margin: 1.2em;
 }
 
+.button {
+	background-color: $main-color;
+	font-family: inherit;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #FFF;
+	border: none;
+	width: 150px;
+	height: 35px;
+	border-radius: 40px;
+	cursor: pointer;
+}
+
 // _HEADER_GENERAL
 header {
 	height: 100vh; 
@@ -74,18 +87,7 @@ header {
 			margin: 0;
 			padding-bottom: 0.5em;
 		}
-		.button {
-			background-color: $main-color;
-			font-family: inherit;
-			text-transform: uppercase;
-			font-weight: 700;
-			color: #FFF;
-			border: none;
-			width: 150px;
-			height: 35px;
-			border-radius: 40px;
-			margin: 3.3em auto;
-		}
+		.button {margin: 3.3em auto;}
 	}
 }
 
@@ -369,7 +371,6 @@ nav {
 		.prices{
 			min-height: 300px;
 			margin-top: 2rem;
-			outline: 1px solid blue;
 			padding: 0.8rem;
 		}
 	}
@@ -378,16 +379,19 @@ nav {
 	font-style: normal;
 	background-color: #FFF;
 	.price{
+		color: #FFF;
 		background-color: #5a5a5a;
-		height: 200px;
 		position: relative;
+		padding: 0.8rem 0 1.8rem;
 		p{
-			span{}
+			font-weight: 700;
+			span{font-size: 3rem;}
 		}		
 		.price-name{
 			background-color: #f4f4f4;
 			font-weight: 700;
 			font-size: 0.8em;
+			color: #000;
 			text-transform: uppercase;
 			margin: 0 auto;
 			width: 75%;
@@ -399,73 +403,18 @@ nav {
 			transform: translate(-50%, 50%);
 		}
 	}
+	.price-active{background-color: $main-color;}
 	.price-offer-content{
 		ul{
-			li{}
+			display: inline-block;
+			list-style: none;
+			padding: 1.5rem 0 0 0;
+			li{
+				line-height: 1.2;
+				margin: 0.3rem;
+				font-size: 0.9rem;
+			}
 		}
-		button{}
+		button{margin-bottom: 2em; width: 80%}
 	}
 }
-						
-/*
-
-.header-text{
-	font: 22px/1.5 'Raleway', sans-serif;
-	color: #FFF;
-	position: absolute;
-	width: 950px;
-	top: 60%;
-	left: 50%;
-	transform: translate(-50%, -120%);
-	text-align: center;
-}
-
-.button {
-	position: relative;
-	border-radius: 2px;
-	background-color: rgb(232, 69, 69);
-	width: 200px;
-	height: 46px;
-	font: bold 13px/1.615 'Raleway', sans-serif;
-	color: #FFF;
-	text-transform: uppercase;
-	text-align: center;
-	border: none;
-	cursor: pointer;
-	transition: background-color 0.5s, box-shadow 0.4s, text-shadow 0.4s;
-}
-
-.button span {
-	display: inline-block;
-	position: relative;
-	transition: 0.5s;
-}
-
-.button span:after {
-	content: '\00bb';
-	position: absolute;
-	opacity: 0;
-	top: 0;
-	right: -20px;
-	transition: 0.5s;
-}
-.button:hover {
-	box-shadow: 0 0 10px 2px rgba(235, 35, 35, 0.7);
-	text-shadow: 0 0 2px #FFF;
-    background-color: rgb(235, 35, 35);
-}
-.button:hover span {
-    padding-right: 25px;
-}
-
-.button:hover span:after {
-    opacity: 1;
-    right: 0;
-}
-
-.header-button {
-	position: absolute;
-	top: 83%;
-	left: 50%;
-	transform: translate(-50%, -150%);
-} */
