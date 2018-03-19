@@ -277,7 +277,7 @@ nav {
 	position: relative;
 	font-family: $font-main;
 	text-align: center;
-	h1 { 
+	h2 { 
 		font-weight: 300;
 		font-style: italic;
 		margin: 5rem 0 0;
@@ -310,12 +310,10 @@ nav {
 	}
 } // lepszy kod zrób do tej sekcji
 
-// _QUOTES SECTION
+// _QUOTES SECTION --- YEAAAAH!!!
 .quotes-section{
 	background: #000 url('../../images/header_background.jpg') top/cover;
-	// height:50vh;
 	.quotes{
-		height: 100%;
 		padding: 2rem 0;
 		position: relative;
 		text-align: center;
@@ -325,6 +323,8 @@ nav {
 			top: 50%;
 			font-size: 2rem;
 			transform: translate(0, -50%);
+			transition: all 0.3s;
+			&:hover {color: #FFF;text-shadow: 0 0 3px #FFF;}
 		}
 		.fa-chevron-left{left: -4%;}
 		.fa-chevron-right{right: -4%;}
@@ -333,10 +333,10 @@ nav {
 			.quotation-marks{
 				font-size: 4rem;
 				color: $main-color;
-				transform: translate(0, 20%)
+				transform: translate(0, 18%)
 			}
 			p{
-				width:60%;
+				width:70%;
 				margin: 0 auto;
 				line-height: 1.6;
 				font-style: italic;
@@ -345,7 +345,68 @@ nav {
 		}
 	}
 }
+// end _QUOTES SECTION --- PERFECTO FINITO!!!
 
+// _PRICES SECTION
+.prices-section {
+	background-color: #f4f4f4;
+	position: relative;
+	font-family: $font-main;
+	text-align: center;
+	font-weight: 300;
+	font-style: italic;
+	padding: 4rem 0;
+	h2 { 
+		margin: 0 auto;
+		font-weight: inherit;
+	}
+	.prices-line{}
+	p{
+		width: 60%;
+		margin: 0 auto;
+	}
+	.row{
+		.prices{
+			min-height: 300px;
+			margin-top: 2rem;
+			outline: 1px solid blue;
+			padding: 0.8rem;
+		}
+	}
+}
+.price-content{
+	font-style: normal;
+	background-color: #FFF;
+	.price{
+		background-color: #5a5a5a;
+		height: 200px;
+		position: relative;
+		p{
+			span{}
+		}		
+		.price-name{
+			background-color: #f4f4f4;
+			font-weight: 700;
+			font-size: 0.8em;
+			text-transform: uppercase;
+			margin: 0 auto;
+			width: 75%;
+			border-radius: 20px;
+			line-height: 2.5;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translate(-50%, 50%);
+		}
+	}
+	.price-offer-content{
+		ul{
+			li{}
+		}
+		button{}
+	}
+}
+						
 /*
 
 .header-text{

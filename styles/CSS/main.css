@@ -205,7 +205,7 @@ nav {
   font-family: "Lato", sans-serif;
   text-align: center;
   margin-bottom: 50px; }
-  .services-section h1 {
+  .services-section h2 {
     font-weight: 300;
     font-style: italic;
     margin: 5rem 0 0; }
@@ -233,7 +233,6 @@ nav {
 .quotes-section {
   background: #000 url("../../images/header_background.jpg") top/cover; }
   .quotes-section .quotes {
-    height: 100%;
     padding: 2rem 0;
     position: relative;
     text-align: center; }
@@ -242,7 +241,11 @@ nav {
       position: absolute;
       top: 50%;
       font-size: 2rem;
-      transform: translate(0, -50%); }
+      transform: translate(0, -50%);
+      transition: all 0.3s; }
+      .quotes-section .quotes [class*="fa-chevron"]:hover {
+        color: #FFF;
+        text-shadow: 0 0 3px #FFF; }
     .quotes-section .quotes .fa-chevron-left {
       left: -4%; }
     .quotes-section .quotes .fa-chevron-right {
@@ -252,13 +255,54 @@ nav {
       .quotes-section .quotes .quote .quotation-marks {
         font-size: 4rem;
         color: #ED145B;
-        transform: translate(0, 20%); }
+        transform: translate(0, 18%); }
       .quotes-section .quotes .quote p {
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
         line-height: 1.6;
         font-style: italic;
         color: #FFF; }
+
+.prices-section {
+  background-color: #f4f4f4;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  font-style: italic;
+  padding: 4rem 0; }
+  .prices-section h2 {
+    margin: 0 auto;
+    font-weight: inherit; }
+  .prices-section p {
+    width: 60%;
+    margin: 0 auto; }
+  .prices-section .row .prices {
+    min-height: 300px;
+    margin-top: 2rem;
+    outline: 1px solid blue;
+    padding: 0.8rem; }
+
+.price-content {
+  font-style: normal;
+  background-color: #FFF; }
+  .price-content .price {
+    background-color: #5a5a5a;
+    height: 200px;
+    position: relative; }
+    .price-content .price .price-name {
+      background-color: #f4f4f4;
+      font-weight: 700;
+      font-size: 0.8em;
+      text-transform: uppercase;
+      margin: 0 auto;
+      width: 75%;
+      border-radius: 20px;
+      line-height: 2.5;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%); }
 
 /*
 
