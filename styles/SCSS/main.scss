@@ -125,6 +125,7 @@ nav {
 	}
 	label[for="menu-button"] {
 		display:none;
+		color: $text-color; // mój telefon
 	}
 }
 
@@ -164,7 +165,6 @@ nav {
 			cursor: pointer;
 			position: relative;
 			bottom: $nav-height;
-			color:$text-color;
 		}
 
 	}
@@ -309,6 +309,42 @@ nav {
 		}
 	}
 } // lepszy kod zrób do tej sekcji
+
+// _QUOTES SECTION
+.quotes-section{
+	background: #000 url('../../images/header_background.jpg') top/cover;
+	// height:50vh;
+	.quotes{
+		height: 100%;
+		padding: 2rem 0;
+		position: relative;
+		text-align: center;
+		[class*="fa-chevron"]{
+			color: #8f8f8f;
+			position: absolute;
+			top: 50%;
+			font-size: 2rem;
+			transform: translate(0, -50%);
+		}
+		.fa-chevron-left{left: -4%;}
+		.fa-chevron-right{right: -4%;}
+		.quote{
+			font-family: $font-main;
+			.quotation-marks{
+				font-size: 4rem;
+				color: $main-color;
+				transform: translate(0, 20%)
+			}
+			p{
+				width:60%;
+				margin: 0 auto;
+				line-height: 1.6;
+				font-style: italic;
+				color: $text-color;
+			}
+		}
+	}
+}
 
 /*
 

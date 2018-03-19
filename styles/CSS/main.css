@@ -85,7 +85,8 @@ nav {
     nav .nav-list .nav-active a {
       color: #ED145B; }
   nav label[for="menu-button"] {
-    display: none; }
+    display: none;
+    color: #FFF; }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   nav {
@@ -112,8 +113,7 @@ nav {
     text-shadow: 0 0 3px #FFF;
     cursor: pointer;
     position: relative;
-    bottom: 5rem;
-    color: #FFF; }
+    bottom: 5rem; }
 
   #menu-button:not(:checked) ~ ul {
     display: none; }
@@ -229,6 +229,36 @@ nav {
     text-transform: uppercase;
     color: #ED145B;
     /* margin: 20px 0; */ }
+
+.quotes-section {
+  background: #000 url("../../images/header_background.jpg") top/cover; }
+  .quotes-section .quotes {
+    height: 100%;
+    padding: 2rem 0;
+    position: relative;
+    text-align: center; }
+    .quotes-section .quotes [class*="fa-chevron"] {
+      color: #8f8f8f;
+      position: absolute;
+      top: 50%;
+      font-size: 2rem;
+      transform: translate(0, -50%); }
+    .quotes-section .quotes .fa-chevron-left {
+      left: -4%; }
+    .quotes-section .quotes .fa-chevron-right {
+      right: -4%; }
+    .quotes-section .quotes .quote {
+      font-family: "Lato", sans-serif; }
+      .quotes-section .quotes .quote .quotation-marks {
+        font-size: 4rem;
+        color: #ED145B;
+        transform: translate(0, 20%); }
+      .quotes-section .quotes .quote p {
+        width: 60%;
+        margin: 0 auto;
+        line-height: 1.6;
+        font-style: italic;
+        color: #FFF; }
 
 /*
 
