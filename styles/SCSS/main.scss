@@ -12,6 +12,7 @@ _HEADER
 
 $main-color: #ED145B;
 $text-color: #FFF;
+$additional-font-color: #5A5A5A;
 $font-main: 'Lato', sans-serif;
 $nav-height: 5rem;
 $nav-hamburger-size: 2.5rem;
@@ -55,6 +56,17 @@ body {
 	height: 35px;
 	border-radius: 40px;
 	cursor: pointer;
+}
+section {
+	font-family: $font-main;
+	color: $additional-font-color;
+	text-align: center;
+}
+
+h5{
+	text-transform: uppercase;
+	color: $main-color;
+	/* margin: 20px 0; */
 }
 
 // _HEADER_GENERAL
@@ -193,9 +205,9 @@ nav {
 
 .about-section {
 	position: relative;
-	font-family: $font-main;
 	font-weight: 300;
 	background-color: #f4f4f4;
+	text-align: left;
 	// height: 80vh;
 	min-height: 430px;
 	.clippy {
@@ -274,51 +286,41 @@ nav {
 	}
 }
 
-// _SERVICES SECTION
+// _SERVICES SECTION --- PERFECTO FINITO!!!
 .services-section {
-	position: relative;
-	font-family: $font-main;
-	text-align: center;
+	margin-bottom: 3rem;
 	h2 { 
 		font-weight: 300;
 		font-style: italic;
 		margin: 5rem 0 0;
 	}
-	.services-line{}
-	p{ font-weight: 300; margin: 0 0 3rem; }
-			margin-bottom: 50px;
-	.row{
-		.services{
-			.services-icon{
-				border-radius: 50px;
-				border: 1px solid grey;
-				display: inline-block;
-				height: 100px;
-				width: 100px;
-				line-height: 100px;
-				position: relative;
-				img{
-					position: absolute;
-					transform: translate(-50%, 35%); 
-				}
-				.weird-icon{transform: translate(-50%, 60%);}
-			}
-			h5{
-				text-transform: uppercase;
-				color: $main-color;
-				/* margin: 20px 0; */
-			}
-		}
+	p { 
+		font-weight: 300; 
+		margin: 0 0 3rem; 
 	}
-} // lepszy kod zrób do tej sekcji
+}
+.services-icon{
+	border-radius: 50px;
+	border: 1px solid $additional-font-color;
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	line-height: 100px;
+	position: relative;
+	img{
+		position: absolute;
+		transform: translate(-50%, 35%); 
+	}
+	.weird-icon{transform: translate(-50%, 60%);}
+}
+// end_SERVICES SECTION --- PERFECTO FINITO!!!
 
-// _QUOTES SECTION --- YEAAAAH!!!
+// _QUOTES SECTION --- PERFECTO FINITO!!!
 .quotes-section{
 	background: #000 url('../../images/header_background.jpg') top/cover;
 	.quotes{
 		padding: 2rem 0;
 		position: relative;
-		text-align: center;
 		[class*="fa-chevron"]{
 			color: #8f8f8f;
 			position: absolute;
@@ -353,8 +355,6 @@ nav {
 .prices-section {
 	background-color: #f4f4f4;
 	position: relative;
-	font-family: $font-main;
-	text-align: center;
 	font-weight: 300;
 	font-style: italic;
 	padding: 4rem 0;
@@ -378,9 +378,10 @@ nav {
 .price-content{
 	font-style: normal;
 	background-color: #FFF;
+
 	.price{
 		color: #FFF;
-		background-color: #5a5a5a;
+		background-color: #5A5A5A;
 		position: relative;
 		padding: 0.8rem 0 1.8rem;
 		p{
@@ -391,7 +392,7 @@ nav {
 			background-color: #f4f4f4;
 			font-weight: 700;
 			font-size: 0.8em;
-			color: #000;
+			color: $additional-font-color;
 			text-transform: uppercase;
 			margin: 0 auto;
 			width: 75%;
@@ -418,3 +419,23 @@ nav {
 		button{margin-bottom: 2em; width: 80%}
 	}
 }
+// end _PRICES SECTION
+
+//_ADDITIONAL_INFO SECTION --- PERFECTO FINITO!!!
+
+.additional-info-section {padding: 5rem 0 3rem}
+.info-icon {text-align: center}
+.info {
+	padding: 0 1.2rem;
+	margin-bottom: 1.5rem;
+	h5 {margin: 0}
+	p {
+		font-weight: 300;
+		line-height: 1.5;
+		color: $additional-font-color;
+	}
+}
+	
+// end_ADDITIONAL_INFO SECTION --- PERFECTO FINITO!!!
+
+

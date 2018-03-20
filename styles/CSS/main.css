@@ -34,6 +34,16 @@ body {
   border-radius: 40px;
   cursor: pointer; }
 
+section {
+  font-family: "Lato", sans-serif;
+  color: #5A5A5A;
+  text-align: center; }
+
+h5 {
+  text-transform: uppercase;
+  color: #ED145B;
+  /* margin: 20px 0; */ }
+
 header {
   height: 100vh;
   background: #000 url("../../images/header_background.jpg") center/cover;
@@ -137,9 +147,9 @@ nav {
       padding-left: 0; } }
 .about-section {
   position: relative;
-  font-family: "Lato", sans-serif;
   font-weight: 300;
   background-color: #f4f4f4;
+  text-align: left;
   min-height: 430px; }
   .about-section .clippy {
     background-color: #ED145B;
@@ -204,10 +214,7 @@ nav {
       left: 50%;
       transform: translate(-50%, 25%); } }
 .services-section {
-  position: relative;
-  font-family: "Lato", sans-serif;
-  text-align: center;
-  margin-bottom: 50px; }
+  margin-bottom: 3rem; }
   .services-section h2 {
     font-weight: 300;
     font-style: italic;
@@ -215,30 +222,26 @@ nav {
   .services-section p {
     font-weight: 300;
     margin: 0 0 3rem; }
-  .services-section .row .services .services-icon {
-    border-radius: 50px;
-    border: 1px solid grey;
-    display: inline-block;
-    height: 100px;
-    width: 100px;
-    line-height: 100px;
-    position: relative; }
-    .services-section .row .services .services-icon img {
-      position: absolute;
-      transform: translate(-50%, 35%); }
-    .services-section .row .services .services-icon .weird-icon {
-      transform: translate(-50%, 60%); }
-  .services-section .row .services h5 {
-    text-transform: uppercase;
-    color: #ED145B;
-    /* margin: 20px 0; */ }
+
+.services-icon {
+  border-radius: 50px;
+  border: 1px solid #5A5A5A;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  position: relative; }
+  .services-icon img {
+    position: absolute;
+    transform: translate(-50%, 35%); }
+  .services-icon .weird-icon {
+    transform: translate(-50%, 60%); }
 
 .quotes-section {
   background: #000 url("../../images/header_background.jpg") top/cover; }
   .quotes-section .quotes {
     padding: 2rem 0;
-    position: relative;
-    text-align: center; }
+    position: relative; }
     .quotes-section .quotes [class*="fa-chevron"] {
       color: #8f8f8f;
       position: absolute;
@@ -269,8 +272,6 @@ nav {
 .prices-section {
   background-color: #f4f4f4;
   position: relative;
-  font-family: "Lato", sans-serif;
-  text-align: center;
   font-weight: 300;
   font-style: italic;
   padding: 4rem 0; }
@@ -290,7 +291,7 @@ nav {
   background-color: #FFF; }
   .price-content .price {
     color: #FFF;
-    background-color: #5a5a5a;
+    background-color: #5A5A5A;
     position: relative;
     padding: 0.8rem 0 1.8rem; }
     .price-content .price p {
@@ -301,7 +302,7 @@ nav {
       background-color: #f4f4f4;
       font-weight: 700;
       font-size: 0.8em;
-      color: #000;
+      color: #5A5A5A;
       text-transform: uppercase;
       margin: 0 auto;
       width: 75%;
@@ -324,5 +325,21 @@ nav {
   .price-content .price-offer-content button {
     margin-bottom: 2em;
     width: 80%; }
+
+.additional-info-section {
+  padding: 5rem 0 3rem; }
+
+.info-icon {
+  text-align: center; }
+
+.info {
+  padding: 0 1.2rem;
+  margin-bottom: 1.5rem; }
+  .info h5 {
+    margin: 0; }
+  .info p {
+    font-weight: 300;
+    line-height: 1.5;
+    color: #5A5A5A; }
 
 /*# sourceMappingURL=main.css.map */
