@@ -438,4 +438,28 @@ nav {
 	
 // end_ADDITIONAL_INFO SECTION --- PERFECTO FINITO!!!
 
+// _JOIN_US --- PERFECTO FINITO!!!
 
+.join-section {
+	background-color: $main-color;
+	color: $text-color;
+	text-transform: uppercase;
+	padding: 2.5rem;
+	h2 {
+		display: inline-block;
+		font-weight: 300;
+		span{font-weight: 700}
+	}
+	button{
+		background-color: #fff;
+		color: $main-color;
+		transform: translate(0, -12%);
+		font-size:0.75rem;
+		font-weight: 700;
+		margin: 0 2.5rem;
+	}
+}
+
+// end_JOIN_US --- PERFECTO FINITO!!!
+
+//może zrobic cos z section lub containerem aby zawierał w sobie passing top i bottom???

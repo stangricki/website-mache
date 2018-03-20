@@ -342,4 +342,22 @@ nav {
     line-height: 1.5;
     color: #5A5A5A; }
 
+.join-section {
+  background-color: #ED145B;
+  color: #FFF;
+  text-transform: uppercase;
+  padding: 2.5rem; }
+  .join-section h2 {
+    display: inline-block;
+    font-weight: 300; }
+    .join-section h2 span {
+      font-weight: 700; }
+  .join-section button {
+    background-color: #fff;
+    color: #ED145B;
+    transform: translate(0, -12%);
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin: 0 2.5rem; }
+
 /*# sourceMappingURL=main.css.map */
