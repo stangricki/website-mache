@@ -466,7 +466,6 @@ nav {
 	margin: 80px 0;
 	h2{
 		font-size: 2rem;
-		// font-weight: 300;
 		font-style: italic;
 		margin-bottom: 0;
 	}
@@ -515,5 +514,106 @@ nav {
 .news-photo-6{background: url("../../images/news6.jpg") center/cover}
 // end_NEWS --- PERFECTO FINITO!!!
 
+//_ADDITIONAL_INFO_2 SECTION --- PERFECTO FINITO!!!
+
+.additional-info-2 {
+	background: #000 url('../../images/header_background.jpg') center/cover;
+}
+
+.info-2 {
+	color: #FFF;
+	font-weight: 300;
+	padding: 6rem 0;
+	line-height: 2;
+	h2 {
+		font-size: 2rem;
+		font-style: italic;
+		margin: 0;
+	}
+	.info-2-line {
+		margin-bottom: 5px;
+	}
+	.info-2-text {
+		font-size: 15px;
+		padding: 0 20% 1.25rem;
+	}
+}
+
+// end_ADDITIONAL_INFO_2 SECTION --- PERFECTO FINITO!!!
+.download-section{
+	background-color: #f4f4f4; 
+	text-align: left;
+	position: relative;
+}
+.download-content {
+	font-weight: 300;
+	padding: 6rem 0;
+	line-height: 2;
+	float: right;
+	h2{
+		font-size: 2rem;
+		font-style: italic;
+		margin: 0;
+	}
+	.download-line {margin-bottom: 5px; margin-left: 0; }
+	.download-text {
+		font-size: 15px;
+		padding-bottom: 2rem;
+	}
+}
+.download-image {
+	position: absolute;
+	height:100vh;
+	transform: translate(0, -40%);
+	top: 50vh;
+	left:0;
+	background: url("../../images/download.jpg") center/90% no-repeat;
+}
+
+@media #{$tablets} {
+	.download-image {
+		position: static;
+		transform: translate(0,0);
+		background: url("../../images/download.jpg") center/80% no-repeat;
+		height:80vh;
+		margin-top: 3rem;
+	}
+	.download-content {
+		padding: 1rem 0;
+		text-align: center;
+		.button{margin-bottom: 4rem;}
+	}
+	.download-line{margin: 0;}
+}
+
+@media #{$phones} {
+	.download-image {
+		position: static;
+		transform: translate(0,0);
+		background: url("../../images/download.jpg") center/100% no-repeat;
+		height:60vh;
+		margin-top: 3rem;}
+	.download-content {
+		padding: 1rem 0;
+		text-align: center;
+		.button{margin-bottom: 5rem;}
+	}
+	.download-line{margin: 0;}
+}
+
+footer {
+	background-color: #2b2b2b;
+	font-family: $font-main;
+	p {
+		font-weight: 300;
+		display: inline-block;
+		color: $text-color;
+		text-transform: uppercase;
+		line-height: 2.667;
+		span {font-weight: 700}
+		.footer-dot {color:$main-color}
+	}
+	.footer-right {float: right;}
+}
 
 //może zrobic cos z section lub containerem aby zawierał w sobie passing top i bottom???
