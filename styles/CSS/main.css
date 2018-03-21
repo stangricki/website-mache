@@ -445,6 +445,8 @@ nav {
   background-color: #f4f4f4;
   text-align: left;
   position: relative; }
+  .download-section .container {
+    margin: 0; }
 
 .download-content {
   font-weight: 300;
@@ -463,9 +465,7 @@ nav {
     padding-bottom: 2rem; }
 
 .download-image {
-  position: absolute;
   height: 100vh;
-  transform: translate(0, -40%);
   top: 50vh;
   left: 0;
   background: url("../../images/download.jpg") center/90% no-repeat; }
@@ -474,7 +474,7 @@ nav {
   .download-image {
     position: static;
     transform: translate(0, 0);
-    background: url("../../images/download.jpg") center/80% no-repeat;
+    background: url("../../images/download.jpg") center/56% no-repeat;
     height: 80vh;
     margin-top: 3rem; }
 
@@ -490,7 +490,7 @@ nav {
   .download-image {
     position: static;
     transform: translate(0, 0);
-    background: url("../../images/download.jpg") center/100% no-repeat;
+    background: url("../../images/download.jpg") center/65% no-repeat;
     height: 60vh;
     margin-top: 3rem; }
 
