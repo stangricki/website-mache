@@ -32,7 +32,13 @@ body {
   width: 150px;
   height: 35px;
   border-radius: 40px;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 0.3s; }
+  .button:hover {
+    background-color: #fff;
+    color: #ED145B;
+    box-shadow: 0 0 5px 2px #ED145B;
+    text-shadow: 0 0 4px #5A5A5A; }
 
 section {
   font-family: "Lato", sans-serif;
@@ -288,7 +294,12 @@ nav {
 
 .price-content {
   font-style: normal;
-  background-color: #FFF; }
+  background-color: #FFF;
+  transition: 0.5s; }
+  .price-content:hover {
+    box-shadow: 0 0 10px 2px #5A5A5A; }
+    .price-content:hover .price-active {
+      box-shadow: 0 0 10px 2px #ED145B; }
   .price-content .price {
     color: #FFF;
     background-color: #5A5A5A;
@@ -359,6 +370,11 @@ nav {
     font-size: 0.75rem;
     font-weight: 700;
     margin: 0 2.5rem; }
+    .join-section button:hover {
+      background-color: #ED145B;
+      color: #FFF;
+      box-shadow: 0 0 5px 2px #FFF;
+      text-shadow: 0 0 4px #5A5A5A; }
 
 .news-section {
   margin: 80px 0; }

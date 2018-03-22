@@ -56,7 +56,16 @@ body {
 	height: 35px;
 	border-radius: 40px;
 	cursor: pointer;
+	transition: all 0.3s;
+	&:hover {
+		background-color: #fff;
+		color: $main-color;
+		box-shadow: 0 0 5px 2px $main-color;
+		text-shadow: 0 0 4px $additional-font-color;
+	}
 }
+
+
 section {
 	font-family: $font-main;
 	color: $additional-font-color;
@@ -378,6 +387,11 @@ nav {
 .price-content{
 	font-style: normal;
 	background-color: #FFF;
+	transition: 0.5s;
+	&:hover {
+		box-shadow: 0 0 10px 2px $additional-font-color;
+		.price-active{box-shadow: 0 0 10px 2px $main-color};
+	}
 
 	.price{
 		color: #FFF;
@@ -404,7 +418,8 @@ nav {
 			transform: translate(-50%, 50%);
 		}
 	}
-	.price-active{background-color: $main-color;}
+	.price-active{background-color: $main-color}
+
 	.price-offer-content{
 		ul{
 			display: inline-block;
@@ -457,6 +472,12 @@ nav {
 		font-size:0.75rem;
 		font-weight: 700;
 		margin: 0 2.5rem;
+		&:hover {
+			background-color: $main-color;
+			color: #FFF;
+			box-shadow: 0 0 5px 2px #FFF;
+			text-shadow: 0 0 4px $additional-font-color;
+		}
 	}
 }
 // end_JOIN_US --- PERFECTO FINITO!!!
